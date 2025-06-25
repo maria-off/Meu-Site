@@ -1,113 +1,105 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Livraria Criativa</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
-            margin: 0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
-        .livraria {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-        }
-        .livro {
-            background-color: white;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            width: 200px;
-            text-align: center;
-        }
-        .livro img {
-            width: 100%;
-            border-radius: 5px;
-        }
-        .preco {
-            font-weight: bold;
-            color: #d9534f;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floricultura Encanto Rosa</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fff0f5;
+      color: #6a1b9a;
+    }
+
+    header {
+      background-color: #f8bbd0;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+    }
+
+    nav {
+      background-color: #fce4ec;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #6a1b9a;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .botao-voltar {
+      display: inline-block;
+      margin-top: 40px;
+      background-color: #f48fb1;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .botao-voltar:hover {
+      background-color: #ec407a;
+    }
+
+    footer {
+      margin-top: 60px;
+      background-color: #fce4ec;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #8e24aa;
+    }
+  </style>
 </head>
-<body>
+<body id="topo">
 
-    <header>
-        <h1>Livraria Criativa</h1>
-    </header>
+  <header>
+    <h1>Floricultura Encanto Rosa</h1>
+  </header>
 
-    <nav>
-        <a href="inicio.html">Início</a>
-        <a href="inex.html">Livros</a>
-        <a href="contatos.html">Contato</a>
-        <a href="sobre.html">Sobre</a>
-    </nav>
+  <nav>
+    <a href="inicio.html">Início</a>
+    <a href="produto.html">Produtos</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="contatos.html">Contato</a>
+  </nav>
 
-    <div class="livraria">
-        <div class="livro">
-            <img src="livro1.jpg" alt="Livro 1">
-            <h2>Livro 1</h2>
-            <p class="preco">R$ 49,90</p>
-        </div>
-        <div class="livro">
-            <img src="livro2.jpg" alt="Livro 2">
-            <h2>Livro 2</h2>
-            <p class="preco">R$ 39,90</p>
-        </div>
-        <div class="livro">
-            <img src="livro3.jpg" alt="Livro 3">
-            <h2>Livro 3</h2>
-            <p class="preco">R$ 59,90</p>
-        </div>
-        <div class="livro">
-            <img src="livro4.jpg" alt="Livro 4">
-            <h2>Livro 4</h2>
-            <p class="preco">R$ 44,90</p>
-        </div>
-        <div class="livro">
-            <img src="livro5.jpg" alt="Livro 5">
-            <h2>Livro 5</h2>
-            <p class="preco">R$ 34,90</p>
-        </div>
-        <div class="livro">
-            <img src="livro6.jpg" alt="Livro 6">
-            <h2>Livro 6</h2>
-            <p class="preco">R$ 54,90</p>
-        </div>
-        <div class="livro">
-            <img src="capa7.jpg" alt="Livro 7">
-            <h2>Livro 7</h2>
-            <p class="preco">R$ 42,90</p>
-        </div>
-        <div class="livro">
-            <img src="capa8.jpg" alt="Livro 8">
-            <h2>Livro 8</h2>
-            <p class="preco">R$ 29,90</p>
-        </div>
-    </div>
+  <main>
+    <h2>Flores que encantam e transformam momentos</h2>
+    <p>Explore nosso catálogo e encontre o buquê perfeito para cada emoção 💐</p>
+
+    <a href="#topo" class="botao-voltar">Voltar para o início</a>
+  </main>
+
+  <footer>
+    &copy; 2025 Floricultura Encanto Rosa. Desenvolvido com 💖 e flores.
+  </footer>
 
 </body>
 </html>

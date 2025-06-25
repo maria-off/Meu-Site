@@ -1,70 +1,120 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Livraria Criativa</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 15px;
-        }
-        .contato-container {
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        button {
-            background-color: #d9534f;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        button:hover {
-            background-color: #c9302c;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Floricultura Encanto Rosa</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fff0f5;
+      color: #6a1b9a;
+    }
+
+    header {
+      background-color: #f8bbd0;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    form {
+      background-color: #fce4ec;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #ad1457;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #f8bbd0;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+
+    button {
+      background-color: #f48fb1;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #ec407a;
+    }
+
+    .botao-voltar {
+      display: inline-block;
+      margin-top: 30px;
+      background-color: #f8bbd0;
+      color: #6a1b9a;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 40px;
+      background-color: #fce4ec;
+      padding: 15px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #8e24aa;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>Entre em Contato</h1>
-    </header>
+  <header>
+    <h1>Fale Conosco</h1>
+  </header>
 
-    <div class="contato-container">
-        <form action="enviar.php" method="post">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+  <main>
+    <form>
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" required>
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" required>
 
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+
+    <a href="inex.html" class="botao-voltar">Voltar para a Página Inicial</a>
+  </main>
+
+  <footer>
+    &copy; 2025 Floricultura Encanto Rosa. Com carinho e flores para você!
+  </footer>
 
 </body>
 </html>
